@@ -1,0 +1,258 @@
+/* ======================================== */
+/* ESTILOS PERSONALIZADOS - VERSÃO LIMPA    */
+/* ======================================== */
+
+/* Reset básico */
+body {
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f8f9fc;
+}
+
+/* ======================================== */
+/* BOTÕES - FORÇAR CORES DO BOOTSTRAP       */
+/* ======================================== */
+.btn-primary {
+    background-color: #0d6efd !important;
+    border-color: #0d6efd !important;
+    color: white !important;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7 !important;
+    border-color: #0a58ca !important;
+}
+
+.btn-secondary {
+    background-color: #6c757d !important;
+    border-color: #6c757d !important;
+    color: white !important;
+}
+
+.btn-success {
+    background-color: #198754 !important;
+    border-color: #198754 !important;
+    color: white !important;
+}
+
+.btn-danger {
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+    color: white !important;
+}
+
+.btn-warning {
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+    color: #212529 !important;
+}
+
+.btn-info {
+    background-color: #0dcaf0 !important;
+    border-color: #0dcaf0 !important;
+    color: white !important;
+}
+
+/* Links que parecem botões */
+a.btn-primary,
+a.btn-secondary,
+a.btn-success,
+a.btn-danger,
+a.btn-warning,
+a.btn-info {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+/* ======================================== */
+/* CARDS - ESTILOS BÁSICOS                  */
+/* ======================================== */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+.card-header {
+    background-color: transparent;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    font-weight: 600;
+}
+
+/* ======================================== */
+/* TABELAS                                  */
+/* ======================================== */
+.table thead th {
+    border-bottom: 2px solid #e3e6f0;
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: #5a5c69;
+}
+
+/* ======================================== */
+/* BADGES                                   */
+/* ======================================== */
+.badge {
+    padding: 0.5em 0.75em;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+/* ======================================== */
+/* CORES DOS FORMULÁRIOS - MÓDULO PERGUNTAS */
+/* ======================================== */
+.badge-form-rh {
+    background-color: #d9b3ff !important;
+    color: #2d1b4a !important;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 1px solid #b380ff;
+}
+
+.badge-form-rotina {
+    background-color: #99c2ff !important;
+    color: #003580 !important;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 1px solid #4d94ff;
+}
+
+.badge-form-autoavaliacao {
+    background-color: #a2f2ed !important;
+    color: #004d49 !important;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 1px solid #70e2da;
+}
+
+.badge-form-gestor {
+    background-color: #b3f0bb !important;
+    color: #1b4d24 !important;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 1px solid #82e091;
+}
+
+.badge-form-360 {
+    background-color: #d1e0b7 !important;
+    color: #3e4d26 !important;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 1px solid #b5cc8f;
+}
+
+/* ======================================== */
+/* NAVEGAÇÃO - DROPDOWNS                    */
+/* ======================================== */
+.dropdown-menu {
+    min-width: 320px !important;
+    padding: 10px !important;
+    border: none !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+    border-radius: 16px !important;
+}
+
+.dropdown-item {
+    border-radius: 12px !important;
+    padding: 10px 15px !important;
+    transition: all 0.2s ease !important;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f2f5 !important;
+    transform: translateX(5px) !important;
+}
+
+/* ======================================== */
+/* ANIMAÇÕES                                */
+/* ======================================== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card, .alert, .table {
+    animation: fadeIn 0.5s ease-out;
+}
+
+
+/* ======================================== */
+/* BOTÕES SIM/NÃO - COR FORTE AO SELECIONAR */
+/* ======================================== */
+.sim-nao-container {
+    display: flex;
+    gap: 10px;
+    max-width: 300px;
+}
+
+.sim-nao-container .btn {
+    flex: 1;
+    padding: 8px 15px !important;
+    font-size: 0.9rem !important;
+    border-radius: 50px !important;
+    transition: all 0.2s ease;
+}
+
+/* Botões não selecionados - fundo branco */
+.sim-nao-container .btn-outline-success {
+    background-color: white !important;
+    color: #28a745 !important;
+    border: 2px solid #28a745 !important;
+}
+
+.sim-nao-container .btn-outline-danger {
+    background-color: white !important;
+    color: #dc3545 !important;
+    border: 2px solid #dc3545 !important;
+}
+
+/* 🔥 BOTÕES SELECIONADOS - COR FORÇADA */
+.sim-nao-container .btn-success {
+    background-color: #28a745 !important;
+    color: white !important;
+    border: 2px solid #28a745 !important;
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.3) !important;
+}
+
+.sim-nao-container .btn-danger {
+    background-color: #dc3545 !important;
+    color: white !important;
+    border: 2px solid #dc3545 !important;
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.3) !important;
+}
+
+/* 🔥 FORÇAR O ESTADO CHECKED DO BOOTSTRAP */
+.btn-check:checked + .btn-success,
+.btn-check:checked + .btn-danger {
+    background-color: currentColor !important;
+    color: white !important;
+}
+
+.btn-check:checked + .btn-outline-success {
+    background-color: #28a745 !important;
+    color: white !important;
+    border-color: #28a745 !important;
+}
+
+.btn-check:checked + .btn-outline-danger {
+    background-color: #dc3545 !important;
+    color: white !important;
+    border-color: #dc3545 !important;
+}
+
+/* Efeito hover */
+.sim-nao-container .btn-outline-success:hover,
+.sim-nao-container .btn-outline-danger:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+}
